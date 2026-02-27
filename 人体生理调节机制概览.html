@@ -1,0 +1,787 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人体生理调节机制与高效工作策略</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #FFFFFF;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 1.25rem; /* 20px */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+        }
+        .highlight-gradient-blue {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0), rgba(59, 130, 246, 0.05));
+        }
+        .highlight-gradient-purple {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0), rgba(139, 92, 246, 0.05));
+        }
+        .highlight-gradient-green {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0), rgba(34, 197, 94, 0.05));
+        }
+        .highlight-gradient-orange {
+            background: linear-gradient(135deg, rgba(249, 115, 22, 0), rgba(249, 115, 22, 0.05));
+        }
+        .highlight-gradient-red {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0), rgba(239, 68, 68, 0.05));
+        }
+        .highlight-gradient-teal {
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0), rgba(20, 184, 166, 0.05));
+        }
+        .neuro-card {
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="max-w-7xl mx-auto p-4 md:p-8">
+        <!-- 标题区域 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-6">
+            <div class="card md:col-span-4 p-8 flex flex-col justify-center relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <div class="relative">
+                    <div class="text-sm font-semibold text-blue-500 mb-2">PHYSIOLOGICAL REGULATION & WORK EFFICIENCY</div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">人体生理调节机制<br>与高效工作策略</h1>
+                    <p class="text-lg text-gray-600 mt-4 max-w-3xl">通过科学理解神经递质、激素系统与大脑功能，制定个性化的生活方式和工作策略，实现身心最佳状态</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 神经递质系统 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6">
+            <div class="card md:col-span-3 p-8 relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-purple"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">关键神经递质系统</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- 多巴胺 -->
+                        <div class="neuro-card p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fa-solid fa-bolt text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">多巴胺</h3>
+                                    <p class="text-sm text-purple-600 font-medium">Dopamine</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-3">欲望与驱动的化学信使，调控动机、注意力和愉悦感。</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">动机系统</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">奖励反应</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">认知功能</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 血清素 -->
+                        <div class="neuro-card p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fa-solid fa-balance-scale text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">血清素</h3>
+                                    <p class="text-sm text-blue-600 font-medium">Serotonin</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-3">情绪稳定器，负责维持情绪平衡、产生满足感和幸福感。</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">情绪调节</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">睡眠质量</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">自尊意识</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 去甲肾上腺素 -->
+                        <div class="neuro-card p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fa-solid fa-eye text-green-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">去甲肾上腺素</h3>
+                                    <p class="text-sm text-green-600 font-medium">Norepinephrine</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-3">警觉性和应激反应的主导者，提升专注力和反应速度。</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full">警觉性</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full">专注力</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full">应激反应</span>
+                            </div>
+                        </div>
+                        
+                        <!-- GABA -->
+                        <div class="neuro-card p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fa-solid fa-shield-halved text-orange-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">GABA</h3>
+                                    <p class="text-sm text-orange-600 font-medium">Gamma-Aminobutyric Acid</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-3">主要抑制性神经递质，调节焦虑、促进放松和睡眠。</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs rounded-full">抑制兴奋</span>
+                                <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs rounded-full">抗焦虑</span>
+                                <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs rounded-full">促进睡眠</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 内啡肽 -->
+                        <div class="neuro-card p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fa-solid fa-heart-pulse text-red-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">内啡肽</h3>
+                                    <p class="text-sm text-red-600 font-medium">Endorphins</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-3">天然止痛药和愉悦感激素，抑制疼痛信号，产生愉悦感。</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full">疼痛抑制</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full">愉悦感</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full">压力缓解</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 催产素 -->
+                        <div class="neuro-card p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fa-solid fa-handshake-angle text-teal-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">催产素</h3>
+                                    <p class="text-sm text-teal-600 font-medium">Oxytocin</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-3">爱的荷尔蒙或社交胶水，增强信任、安全感和同理心。</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-teal-100 text-teal-700 text-xs rounded-full">社交连接</span>
+                                <span class="px-3 py-1 bg-teal-100 text-teal-700 text-xs rounded-full">信任感</span>
+                                <span class="px-3 py-1 bg-teal-100 text-teal-700 text-xs rounded-full">同理心</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 激素调节系统与昼夜节律 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-6">
+            <div class="card md:col-span-2 p-8 flex flex-col justify-center relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-green"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">主要激素调节系统</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-brain text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">皮质醇系统</h3>
+                                <p class="text-sm text-gray-600">主要应激激素，调节压力、分解脂肪、稳定血压，具有严格的昼夜节律。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-moon text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">褪黑素系统</h3>
+                                <p class="text-sm text-gray-600">调节"睡眠-觉醒周期"的关键激素，受光线影响，夜间分泌量是白天的5-10倍。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-fire text-red-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">肾上腺素系统</h3>
+                                <p class="text-sm text-gray-600">在应激反应中发挥作用，触发"战斗或逃跑"反应，提升警觉性和能量。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <div class="relative flex-grow flex flex-col">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">昼夜节律与激素分泌</h2>
+                    <div class="flex-grow h-64">
+                        <canvas id="circadianChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 大脑区域与神经-内分泌轴 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-6">
+            <div class="card md:col-span-2 p-8 flex flex-col justify-center relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-orange"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">关键大脑区域</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-cogs text-orange-500 mr-2"></i>
+                                前额叶皮质
+                            </h3>
+                            <p class="text-sm text-gray-600">理性中枢，负责执行控制、情绪调节、工作记忆和决策。</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-heart text-red-500 mr-2"></i>
+                                边缘系统
+                            </h3>
+                            <p class="text-sm text-gray-600">情绪大脑，处理情绪、储存记忆、调控动机与欲望。</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-server text-blue-500 mr-2"></i>
+                                下丘脑
+                            </h3>
+                            <p class="text-sm text-gray-600">内分泌大管家，整合机体情况，调节垂体功能。</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-gland text-purple-500 mr-2"></i>
+                                垂体
+                            </h3>
+                            <p class="text-sm text-gray-600">内分泌大管家，分泌多种促激素，调控其他腺体。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card md:col-span-2 p-8 flex flex-col justify-center relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-red"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">神经-内分泌轴调节机制</h2>
+                    <div class="space-y-6">
+                        <div class="bg-white p-5 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800 mb-3">HPA轴 (下丘脑-垂体-肾上腺轴)</h3>
+                            <div class="flex items-center justify-between">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <i class="fa-solid fa-brain text-blue-600 text-xl"></i>
+                                    </div>
+                                    <p class="text-xs font-medium">下丘脑</p>
+                                    <p class="text-xs text-gray-500">分泌CRH</p>
+                                </div>
+                                <i class="fa-solid fa-arrow-right-long text-gray-300 text-xl"></i>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <i class="fa-solid fa-gland text-purple-600 text-xl"></i>
+                                    </div>
+                                    <p class="text-xs font-medium">垂体</p>
+                                    <p class="text-xs text-gray-500">分泌ACTH</p>
+                                </div>
+                                <i class="fa-solid fa-arrow-right-long text-gray-300 text-xl"></i>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <i class="fa-solid fa-fire text-red-600 text-xl"></i>
+                                    </div>
+                                    <p class="text-xs font-medium">肾上腺</p>
+                                    <p class="text-xs text-gray-500">分泌皮质醇</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600">皮质醇通过负反馈机制调节自身水平，帮助身体应对压力，维持内稳态。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 生活方式调节策略 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-6">
+            <div class="card md:col-span-4 p-8 relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-teal"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">生活方式调节策略</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- 饮食调节 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-apple-whole text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">饮食调节策略</h3>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>摄入富含色氨酸的食物提升血清素</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>食用酪氨酸食物支持多巴胺合成</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>每周食用2-3次深海鱼补充Omega-3</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>补充B族维生素参与神经递质合成</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 作息规律 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-clock text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">作息规律优化</h3>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>固定睡觉和起床时间，建立生物钟</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>21点后开启"暗光模式"促进褪黑素</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>午间小憩20-30分钟恢复精力</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>每跨越1个时区需要约1天适应</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 运动调节 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-person-running text-red-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">运动调节方案</h3>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>每周150分钟中等强度有氧运动</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>HIIT训练高效提升BDNF水平</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>中等强度运动20分钟后内啡肽分泌</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>运动使海马体体积增加2%-3%</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 环境优化 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-building-columns text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">环境优化策略</h3>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-purple-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>使用4000K以上高色温光线提升警觉性</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-purple-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>保持20-26℃舒适温度和40%-60%湿度</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-purple-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>控制噪音在45分贝以下提升效率</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-purple-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>CO2浓度控制在600-800ppm最佳</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 不同任务的个性化调节策略 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-6">
+            <div class="card md:col-span-2 p-8 flex flex-col justify-center relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-purple"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">创意工作的状态调节</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-lightbulb text-yellow-500 mr-2"></i>
+                                生理需求
+                            </h3>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• 多巴胺水平适度升高</li>
+                                <li>• 去甲肾上腺素水平适中</li>
+                                <li>• 血清素水平稳定</li>
+                                <li>• 皮质醇水平较低</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-palette text-purple-500 mr-2"></i>
+                                环境策略
+                            </h3>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• 宽敞、明亮、色彩丰富的空间</li>
+                                <li>• 22-25℃舒适温度</li>
+                                <li>• 高色温照明(4000K以上)</li>
+                                <li>• 35-55dB轻柔背景音乐</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4 bg-white p-4 rounded-lg border border-gray-100">
+                        <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                            <i class="fa-solid fa-brain text-blue-500 mr-2"></i>
+                            认知调节技巧
+                        </h3>
+                        <p class="text-sm text-gray-600">工作前进行5-10分钟冥想，帮助大脑进入放松专注状态；在创意瓶颈时进行"思维漫游"，让大脑自由联想；将大创意任务分解为小步骤，每完成一个小目标就给自己奖励，维持多巴胺水平。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card md:col-span-2 p-8 flex flex-col justify-center relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">分析任务的专注调节</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-microscope text-blue-500 mr-2"></i>
+                                生理需求
+                            </h3>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• 前额叶皮质高度激活</li>
+                                <li>• 多巴胺水平适中</li>
+                                <li>• 去甲肾上腺素水平较高</li>
+                                <li>• GABA水平稳定</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fa-solid fa-cog text-gray-500 mr-2"></i>
+                                环境优化
+                            </h3>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• 安静环境(噪音<60分贝)</li>
+                                <li>• 明亮冷色调照明(5000K以上)</li>
+                                <li>• 20-22℃略微偏凉温度</li>
+                                <li>• 整洁有序的工作区域</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4 bg-white p-4 rounded-lg border border-gray-100">
+                        <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                            <i class="fa-solid fa-bullseye text-red-500 mr-2"></i>
+                            专注力提升技巧
+                        </h3>
+                        <p class="text-sm text-gray-600">使用25分钟专注+5分钟休息的番茄工作法；采用"4-7-8呼吸法"快速提升专注力；每天进行10分钟专注力训练，如盯一个目标、朗读一段文字，强化注意力神经传递功能。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 日常调节方案 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-6">
+            <div class="card md:col-span-4 p-8 relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-green"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">日常调节方案</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- 早晨激活 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-sun text-yellow-600"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-800">早晨激活方案</h3>
+                                <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full ml-auto">6:00-9:00</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">6:00-6:30</div>
+                                    <div class="text-sm text-gray-600">起床后立即拉开窗帘，饮用500ml温水</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">6:30-7:00</div>
+                                    <div class="text-sm text-gray-600">20-30分钟轻度运动，简单拉伸唤醒身体</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">7:00-7:30</div>
+                                    <div class="text-sm text-gray-600">营养早餐，包含色氨酸食物和复合碳水</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">7:30-8:00</div>
+                                    <div class="text-sm text-gray-600">10分钟冥想，设定当日目标</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 上午高效工作 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-briefcase text-blue-600"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-800">上午高效工作</h3>
+                                <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full ml-auto">9:00-12:00</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">9:00-10:00</div>
+                                    <div class="text-sm text-gray-600">处理最重要、最需要创造力的工作</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">10:00-10:10</div>
+                                    <div class="text-sm text-gray-600">短暂休息，深呼吸或远眺</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">10:10-11:00</div>
+                                    <div class="text-sm text-gray-600">继续重要工作或深度思考分析</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">11:00-12:00</div>
+                                    <div class="text-sm text-gray-600">处理中等难度工作，为午餐做准备</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 下午调节 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                                    <i class="fa-solid fa-leaf text-green-600"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-800">下午调节方案</h3>
+                                <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full ml-auto">13:30-17:00</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">13:30-14:00</div>
+                                    <div class="text-sm text-gray-600">处理邮件、回复消息等常规工作</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">14:00-15:00</div>
+                                    <div class="text-sm text-gray-600">进行需要专注力的分析任务</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">15:00-15:15</div>
+                                    <div class="text-sm text-gray-600">下午茶时间，绿茶或黑咖啡</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-16 text-xs text-gray-500 flex-shrink-0">15:15-17:00</div>
+                                    <div class="text-sm text-gray-600">继续工作，会议或团队协作</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 长期健康管理 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+            <div class="card md:col-span-4 p-8 relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-red"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">长期健康管理</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- 健康监测 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-heart-pulse text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">健康监测体系</h3>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>每年一次全面体检</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>记录睡眠质量、情绪状态</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>及时识别身心异常信号</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-blue-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>建立健康档案，定期评估</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 营养管理 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-apple-whole text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">营养管理计划</h3>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>遵循"食物多样、谷类为主"</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>每天蔬菜300-500g，水果200-350g</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>保持规律进餐时间</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>每天饮水1500-2000ml</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 运动管理 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-person-running text-red-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">运动管理计划</h3>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>每周150分钟中等强度有氧运动</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>每周2-3次力量训练</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>选择多样化运动方式</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-red-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>充分利用碎片时间运动</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 睡眠管理 -->
+                        <div class="bg-white p-6 rounded-xl border border-gray-100">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-bed text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 mb-3">睡眠管理策略</h3>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-purple-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>保持固定睡眠和起床时间</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-purple-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>睡前1小时避免电子设备</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-purple-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>保证7-9小时睡眠时间</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa-solid fa-check-circle text-purple-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>保持卧室安静、黑暗、凉爽</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 昼夜节律图表
+        const ctx = document.getElementById('circadianChart').getContext('2d');
+        const circadianChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['00:00', '03:00', '06:00', '09:00', '12:00', '15:00', '18:00', '21:00'],
+                datasets: [
+                    {
+                        label: '皮质醇',
+                        data: [20, 15, 25, 80, 60, 50, 40, 30],
+                        borderColor: '#3B82F6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    },
+                    {
+                        label: '褪黑素',
+                        data: [70, 90, 40, 10, 5, 5, 20, 60],
+                        borderColor: '#8B5CF6',
+                        backgroundColor: 'rgba(139, 92, 246, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
